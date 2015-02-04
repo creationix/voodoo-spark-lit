@@ -11,7 +11,10 @@ if not accessToken then
   error("SPARK_ACCESS_TOKEN require in environment")
 end
 
-local read, write, handle = connect(getAddress(deviceID, accessToken))
+local ip, port = getAddress(deviceID, accessToken)
+p({ip=ip,port=port})
+
+local read, write, handle = connect(ip, port)
 p{read=read,write=write,handle=handle}
 
 

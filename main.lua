@@ -6,11 +6,12 @@ _G.p = require('creationix/pretty-print').prettyPrint
 local exitCode = 0
 coroutine.wrap(function ()
   local success, err = xpcall(function ()
-    require('./repl')
+    require('./app')
   end, debug.traceback)
   if not success then
     print(err)
     exitCode = -1
+    uv.stop()
   end
 end)()
 

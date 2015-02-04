@@ -5,6 +5,7 @@ return {
   dependencies = {
     "creationix/pretty-print@0.1.0",
     "creationix/require@1.0.1",
+    "creationix/coro-fs@1.1.0",
     "creationix/coro-tcp@0.1.2",
     "creationix/coro-tls@1.0.0",
     "creationix/coro-wrapper@0.1.0",

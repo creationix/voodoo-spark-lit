@@ -8,6 +8,7 @@ return {
     "creationix/coro-tcp@0.1.2",
     "creationix/hex-bin@1.0.0",
     "creationix/http-codec@0.1.3",
-    "creationix/readline@1.0.1"
+    "creationix/readline@1.0.1",
+    "creationix/json@2.5.0",
   }
 }

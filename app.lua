@@ -1,6 +1,6 @@
 local env = require('env')
 local uv = require('uv')
-local connect = require('creationix/coro-tcp').connect
+local connect = require('coro-tcp').connect
 
 local getAddress = require('./get-address')
 local makeApi = require('./api')

@@ -1,7 +1,7 @@
-require('luvi').bundle.register("require", "modules/creationix/require.lua");
+require('luvi').bundle.register("require", "modules/require.lua");
 local uv = require('uv')
 local require = require('require')()("bundle:main.lua")
-_G.p = require('creationix/pretty-print').prettyPrint
+_G.p = require('pretty-print').prettyPrint
 
 local exitCode = 0
 coroutine.wrap(function ()

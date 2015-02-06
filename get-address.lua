@@ -1,9 +1,9 @@
-local connect = require('creationix/coro-tcp').connect
-local tlsWrap = require('creationix/coro-tls').wrap
-local httpCodec = require('creationix/http-codec')
-local wrapper = require('creationix/coro-wrapper')
-local fs = require('creationix/coro-fs')
-local jsonParse = require('creationix/json').parse
+local connect = require('coro-tcp').connect
+local tlsWrap = require('coro-tls').wrap
+local httpCodec = require('http-codec')
+local wrapper = require('coro-wrapper')
+local fs = require('coro-fs')
+local jsonParse = require('json').parse
 
 return function (deviceId, accessToken)
   assert(deviceId and accessToken)

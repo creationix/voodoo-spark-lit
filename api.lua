@@ -1,4 +1,4 @@
-local wrapper = require('creationix/coro-wrapper')
+local wrapper = require('coro-wrapper')
 local bit = require('bit')
 
 local function decode(chunk)
